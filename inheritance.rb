@@ -4,10 +4,14 @@ module Swimmable
   end
 end
 
-class Animal; end
+class Animal
+  def self.rim
+    puts "I'm rimming"
+  end
+end
 
-class Fish < Animal
-  include Swimmable
+class Fish < Animal::rim
+  
 end
 
 class Mammal < Animal
